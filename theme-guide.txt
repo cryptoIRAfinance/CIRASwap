@@ -1,0 +1,7 @@
+Images:
+	/src/assets/
+	/public/images/
+	
+	
+Colors:
+	
