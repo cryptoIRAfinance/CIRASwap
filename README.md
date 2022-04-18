@@ -8,17 +8,17 @@ Ciraswap is a multinetwork decentralized exchainge (DEX) with extra features lik
 
 Ciraswap of Crypto IRA is available on https://Ciraswap.cryptoira.finance/
 
-### RGP Token
+### CIRA Token
 
-[RGP Token](https://coinmarketcap.com/currencies/rigel-protocol/) is the governance and utility token of Crypto IRA for all DApps of Crypto IRA.
+[CIRA Token](https://coinmarketcap.com/currencies/cryptoira/) is the governance and utility token of Crypto IRA for all DApps of Crypto IRA.
 
 ### Supported Networks
 
-| Network             | DEX Status                | RGP Address                                                                                                            |
+| Network             | DEX Status                | CIRA Address                                                                                                            |
 | ------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Binance Smart Chain | :heavy_check_mark: Active | [0xfa262f303aa244f9cc66f312f0755d89c3793192](https://bscscan.com/token/0xfa262f303aa244f9cc66f312f0755d89c3793192)     |
-| Polygon mainnet     | :heavy_check_mark: Active | [0x4af5ff1a60a6ef6c7c8f9c4e304cd9051fca3ec0](https://polygonscan.com/token/0x4af5ff1a60a6ef6c7c8f9c4e304cd9051fca3ec0) |
-| Ethereum            | :rocket: Coming soon      | [0x4af5ff1a60a6ef6c7c8f9c4e304cd9051fca3ec0](https://etherscan.io/token/0x4af5ff1a60a6ef6c7c8f9c4e304cd9051fca3ec0)    |
+| Binance Smart Chain | :rocket: Coming soon      | :rocket: Coming soon                                                              
+| Polygon mainnet     | :rocket: Coming soon      | :rocket: Coming soon                                                              
+| Ethereum            | :rocket: Coming soon      |:rocket: Coming soon                                                              
 | Arbitrum            | :rocket: Coming soon      | :rocket: Coming soon                                                                                                   |
 | Fantom              | :rocket: Coming soon      | :rocket: Coming soon                                                                                                   |
 | Avalanche           | :rocket: Coming soon      | :rocket: Coming soon                                                                                                   |
