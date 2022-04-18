@@ -1,16 +1,16 @@
-# SmartSwap
+# Ciraswap
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a03a53fd-fe83-4e96-9ee8-2ef6be947411/deploy-status)](https://app.netlify.com/sites/smartswapdappv2/deploys)
 
-Smartswap is a multinetwork decentralized exchainge (DEX) with extra features like auto trading of tokens at certain prices or time.
+
+Ciraswap is a multinetwork decentralized exchainge (DEX) with extra features like auto trading of tokens at certain prices or time.
 
 ### Link
 
-Smartswap of Rigel Protocol is available on https://smartswap.rigelprotocol.com/
+Ciraswap of Crypto IRA is available on https://Ciraswap.cryptoira.finance/
 
 ### RGP Token
 
-[RGP Token](https://coinmarketcap.com/currencies/rigel-protocol/) is the governance and utility token of Rigel Protocol for all DApps of Rigel Protocol.
+[RGP Token](https://coinmarketcap.com/currencies/rigel-protocol/) is the governance and utility token of Crypto IRA for all DApps of Crypto IRA.
 
 ### Supported Networks
 
@@ -36,13 +36,13 @@ Smartswap of Rigel Protocol is available on https://smartswap.rigelprotocol.com/
 
 ### Socials
 
-- Website: [rigelProtocol.com](https://rigelprotocol.com/)
-- Interface: [smartswap.rigelprotocol.com](https://smartswap.rigelprotocol.com)
-- RoadMap: [rigelprotocol.com](https://rigelprotocol.com/)
+- Website: [cryptoira.finance](https://cryptoira.finance/)
+- Interface: [Ciraswap.cryptoira.finance](https://Ciraswap.cryptoira.finance)
+- RoadMap: [cryptoira.finance](https://cryptoira.finance/)
 - Twitter: [@rigelprotocol](https://twitter.com/rigelprotocol)
 - Medium: [rigelprotocol](https://medium.com/rigelprotocol)
 - Linkedin: [rigelprotocol](https://www.linkedin.com/company/rigelprotocol)
 - Discord: [rigelprotocol](https://discord.com/invite/j86NH95GDD)
-- Email: [support@rigelprotocol](mailto:support@rigelprotocol.com)
-- Telegram: [rigel protocol](https://www.t.me/rigelprotocol)
-- Whitepaper: [Link](www.rigelprotocol.com/whitepaper)
+- Email: [support@rigelprotocol](mailto:support@cryptoira.finance)
+- Telegram: [Crypto IRA](https://www.t.me/rigelprotocol)
+- Whitepaper: [Link](www.cryptoira.finance/whitepaper)
