@@ -205,7 +205,7 @@ const Index = () => {
               >
                 Dont see a pool you joined?
               </Text>
-              <Text fontSize='sm' color='gray.300' ml={3} cursor='pointer'>
+              <Text fontSize='sm' color='gray.600' ml={3} cursor='pointer'>
                 <Link to='/find'> Import it </Link>
               </Text>
             </Flex>

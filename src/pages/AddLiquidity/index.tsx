@@ -561,7 +561,7 @@ export default function AddLiquidity({
           options: {
             arrowColor: bgColorRide,
             backgroundColor: bgColorRide,
-            textColor: "#FFFFFF",
+            textColor: "gray.600",
             primaryColor: bgColorRide,
           },
         }}
@@ -585,7 +585,7 @@ export default function AddLiquidity({
             cursor='pointer'
           />
           <Spacer />
-          <Heading as='h4' size='md'>
+          <Heading as='h4' size='md' color="gray.700">
             Add Liquidity
           </Heading>
           <Spacer />
@@ -593,7 +593,7 @@ export default function AddLiquidity({
           <TimeIcon w={6} h={7} color={topIcons} />
         </Flex>
         <Box bg={infoBg} borderRadius='md' p={4} mt={4} mb={5}>
-          <Text color='#809a7c' fontWeight='400' fontSize='14px'>
+          <Text color='gray.600' fontWeight='400' fontSize='14px'>
             Tip: When you add liquidity, you will receive pool tokens
             representing your position. These tokens automatically earn fees
             proportional to your share of the pool, and can be redeemed at any
@@ -630,7 +630,7 @@ export default function AddLiquidity({
             mt={5}
             mb={5}
           >
-            <AddIcon color={textColorOne} />
+            <AddIcon color={"gray.700"} />
           </Center>
         </Flex>
         <Box
@@ -658,40 +658,40 @@ export default function AddLiquidity({
           mb='3'
         >
           <Text p='4' fontWeight='400'>
-            Prices & pool share
+            Prices and pool share
           </Text>
           <Divider orientation='horizontal' borderColor={genBorder} />
           <Flex p='4'>
             <VStack>
-              <Text color={textColorOne}>
+              <Text color={"gray.600"}>
                 {priceBToA && pairAvailable
                   ? parseFloat(priceBToA).toFixed(6)
                   : !pairAvailable && priceBperA
                   ? priceBperA
                   : "-"}
               </Text>
-              <Text color={topIcons}>
+              <Text color={"gray.700"}>
                 {currencies[Field.INPUT]?.symbol} per{" "}
                 {currencies[Field.OUTPUT]?.symbol}
               </Text>
             </VStack>
             <Spacer />
             <VStack>
-              <Text color={textColorOne}>
+              <Text color={"gray.600"}>
                 {priceAToB && pairAvailable
                   ? parseFloat(priceAToB).toFixed(6)
                   : priceAperB && !pairAvailable
                   ? priceAperB
                   : "-"}
               </Text>
-              <Text color={topIcons}>
+              <Text color={"gray.700"}>
                 {currencies[Field.OUTPUT]?.symbol} per{" "}
                 {currencies[Field.INPUT]?.symbol}
               </Text>
             </VStack>
             <Spacer />
             <VStack>
-              <Text color={textColorOne}>
+              <Text color={"gray.600"}>
                 {!pairAvailable &&
                 formattedAmounts[Field.INPUT] &&
                 formattedAmounts[Field.OUTPUT]
@@ -702,7 +702,7 @@ export default function AddLiquidity({
                   ? `${parseFloat(poolShare).toFixed(6)}% `
                   : "-"}
               </Text>
-              <Text color={topIcons}>Share of Pool</Text>
+              <Text color={"gray.700"}>Share of Pool</Text>
             </VStack>
           </Flex>
         </Box>
@@ -775,7 +775,7 @@ export default function AddLiquidity({
             width='200px'
             border='2px'
             borderColor={genBorder}
-            color={btnTextColor}
+            color={"gray.700"}
             className='AddLiquidity3'
             w='100%'
             _hover={{ bgColor: "none" }}
@@ -792,9 +792,10 @@ export default function AddLiquidity({
             border='2px'
             className='AddLiquidity3'
             borderColor={genBorder}
-            color={btnTextColor}
+            color={"gray.700"}
             w='100%'
-            _hover={{ bgColor: "none" }}
+            bgColor="brand.300"
+            _hover={{ bgColor: "brand.200" }}
             _active={{ bgColor: "none" }}
             display={
               formattedAmounts[Field.INPUT] && formattedAmounts[Field.OUTPUT]

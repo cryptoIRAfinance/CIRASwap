@@ -146,7 +146,7 @@ const SetPrice = () => {
             </Center>
             <Spacer/>
             <Text fontSize="14px" mr={2} color={textColorOne}>
-              1 CIRA = 1.34566 USDT
+              1 CIRA = 0.025 USDT
             </Text>
             <ExclamationIcon/>
           </Flex>

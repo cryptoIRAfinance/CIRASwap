@@ -222,7 +222,7 @@ setMinNav3(!minNav3)
 
        
        <section className="section__1">
-<div className="section__1__center">
+<div className="section__1__center" >
   <h1>a SAFE way to Swap</h1>
   <p>CIRA Swap controls all Liquidity Pools ensuring a RUG FREE experience</p>
   <Flex justifyContent="center">

@@ -240,6 +240,7 @@ const ConfirmModal: React.FC<IModal> = ({
               or the transaction will revert.
             </Text>
             <Button
+              bgColor="brand.300"
               _hover={{ bg: "brand.200" }}
               _focus={{ bg: "brand.300", boxShadow: "transparent" }}
               

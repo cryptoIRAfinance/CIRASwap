@@ -151,7 +151,7 @@ const SendToken = () => {
   const borderColor = useColorModeValue("brand.200", "brand.400");
   const color = useColorModeValue("brand.800", "brand.800");
   const lightmode = useColorModeValue(true, false);
-  const switchBgcolor = useColorModeValue("brand.200", "brand.300");
+  const switchBgcolor = useColorModeValue("brand.200", "brand.400");
   const buttonBgcolor = useColorModeValue("brand.300", "brand.300");
 
   const [showModal, setShowModal] = useState(false);
@@ -1117,7 +1117,7 @@ const SendToken = () => {
               p='5px'
               mt={1}
               disabled={inputError !== undefined || insufficientBalance}
-              color={inputError ? color : "#brand.50"}
+              color={inputError ? color : "brand.50"}
               bgColor={inputError ? switchBgcolor : buttonBgcolor}
               fontSize='18px'
               boxShadow={lightmode ? "base" : "lg"}
@@ -1137,7 +1137,7 @@ const SendToken = () => {
               p='5px'
               mt={1}
               disabled={inputError !== undefined || insufficientBalance}
-              color={inputError ? color : "#brand.50"}
+              color={inputError ? color : "brand.50"}
               bgColor={inputError ? switchBgcolor : buttonBgcolor}
               fontSize='18px'
               boxShadow={lightmode ? "base" : "lg"}
@@ -1175,11 +1175,11 @@ const SendToken = () => {
               p='5px'
               mt={1}
               disabled={inputError !== undefined || insufficientBalance}
-              color={inputError ? color : "#brand.50"}
+              color={inputError ? color : "gray.700"}
               bgColor={inputError ? switchBgcolor : buttonBgcolor}
               fontSize='18px'
               boxShadow={lightmode ? "base" : "lg"}
-              _hover={{ bgColor: buttonBgcolor }}
+              _hover={{ bgColor: switchBgcolor }}
               onClick={() => {
                 setCurrentToPrice(receivedAmount);
                 setShowModal(!showModal);

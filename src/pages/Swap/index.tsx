@@ -47,7 +47,7 @@ const Swap = () => {
       <WelcomeModal startToure={strartWelcomeRide} openModal={welcomeModal}
                     closeModal={() => setWelcomeModal((state) => !state)}
                     textHeader={'Welcome to Crypto IRA CIRASwap'}
-                    welcomeText="Thank you for visiting, please join us on a brief tour!" />
+                    welcomeText="Thank you for visiting, please enjoy a quick tour" />
       <Box fontSize="xl">
         <Flex
           minH="100vh"

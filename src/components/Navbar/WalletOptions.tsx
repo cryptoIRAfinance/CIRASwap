@@ -7,6 +7,7 @@ import BinanceWallet from "../../assets/BNB.svg";
 import WalletConnect from "../../assets/walletconnect-logo.svg";
 import SafePal from '../../assets/safepal-sfp.svg';
 import {ConnectorNames} from "../../connectors";
+import getLibrary from '../../utils/getLibrary';
 
 const WalletItem = ({name, image, connect}: {name: string, image: string, connect: Function}) => {
     const borderColor = useColorModeValue("brand.400", "brand.400");
@@ -66,10 +67,10 @@ const WalletOptions = ({connect}: {connect: Function}) => {
 
     return (
         <>
-            <ModalHeader mt={4} fontWeight="regular" fontSize={'20px'}>
+            <ModalHeader mt={4} fontWeight="regular" fontSize={'20px'} color="gray.700">
                 Choose a wallet
             </ModalHeader>
-            <ModalBody mt={4}>
+            <ModalBody mt={4} bgColor="brand.300" color="gray.700">
                 {walletItems.map((item, i) => (
                     <WalletItem key={i} name={item.name} image={item.image} connect={() => item.connect(item.id)}/>
                 ))}

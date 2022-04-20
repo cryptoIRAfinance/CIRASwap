@@ -8,7 +8,7 @@ interface Props {
 
 const ContentBox = ({ children }: Props) => (
   // @ts-ignore
-  <Text align='left' color="white">{children}</Text>
+  <Text align='left' color="brand.50">{children}</Text>
 );
 
 export default ContentBox;

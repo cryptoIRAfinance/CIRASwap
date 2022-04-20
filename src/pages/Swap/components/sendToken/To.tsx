@@ -23,6 +23,7 @@ const To: React.FC<ToProps> = ({
 
 }) => {
   const borderColor = useColorModeValue('brand.200', 'brand.500');
+  const bgColor = useColorModeValue('tan.200', '');
   const [tokenModal, setTokenModal] = useState(false);
 
   const handleInputSelect = useCallback(
@@ -45,6 +46,7 @@ const To: React.FC<ToProps> = ({
         borderRadius="6px"
         border="1px"
         borderColor={borderColor}
+        bgColor={bgColor}
         className='SelectToken'
       >
         <InputSelector

@@ -122,7 +122,7 @@ export function Index() {
   const history = useHistory();
   const mode = useColorModeValue(LIGHT_THEME, DARK_THEME);
   const filterBorderColor = useColorModeValue("brand.200", "brand.500");
-  const placeholderTextColor = useColorModeValue("gray.500", "#9cb099");
+  const placeholderTextColor = useColorModeValue("gray.500", "brand.400");
   const titleColor = useColorModeValue("gray.500", "tan.50");
   const [selected, setSelected] = useState(LIQUIDITY);
   const [isActive, setIsActive] = useState(V2);
@@ -1772,7 +1772,7 @@ export function Index() {
 
   const [welcomeModal, setWelcomeModal] = useState(false);
   const [run, setRun] = useState(false);
-  const bgColor = useColorModeValue("brand.500", "tan.500");
+  const bgColor = useColorModeValue("brand.500", "brand.200");
 
   useEffect(() => {
     const visits = window.localStorage.getItem("firstFarmVisit");
@@ -1863,7 +1863,7 @@ export function Index() {
               height='14px'
               width='14px'
               background='brand.500'
-              color='#fff'
+              color='brand.50'
               right='20px'
               textAign='center'
               onClick={handleAlert}
@@ -1896,7 +1896,7 @@ export function Index() {
               height='14px'
               width='14px'
               background='brand.500'
-              color='#fff'
+              color='brand.50'
               right='20px'
               textAign='center'
               onClick={handleAlert}
@@ -1963,14 +1963,14 @@ export function Index() {
               }
               color={
                 mode === LIGHT_THEME && selected === LIQUIDITY
-                  ? "gray.500"
+                  ? "gray.700"
                   : mode === DARK_THEME && selected === LIQUIDITY
-                  ? "brand.50"
+                  ? "gray.700"
                   : mode === DARK_THEME && selected === STAKING
-                  ? "brand.50"
+                  ? "gray.700"
                   : mode === LIGHT_THEME && selected === STAKING
-                  ? "gray.500"
-                  : "gray.500"
+                  ? "gray.700"
+                  : "gray.700"
               }
               // px={5}
               // py={4}
@@ -1983,9 +1983,9 @@ export function Index() {
                 mode === LIGHT_THEME && selected === LIQUIDITY
                   ? "brand.50 !important"
                   : mode === DARK_THEME && selected === LIQUIDITY
-                  ? "brand.500 !important"
+                  ? "brand.300 !important"
                   : mode === DARK_THEME && selected === STAKING
-                  ? "brand.500 !important"
+                  ? "brand.300 !important"
                   : mode === LIGHT_THEME && selected === STAKING
                   ? "brand.50 !important"
                   : "brand.50 !important"
@@ -2004,27 +2004,28 @@ export function Index() {
                     mode === LIGHT_THEME && selected === LIQUIDITY
                       ? "brand.300 !important"
                       : mode === DARK_THEME && selected === LIQUIDITY
-                      ? "brand.600 !important"
+                      ? "brand.300 !important"
                       : mode === DARK_THEME && selected === STAKING
-                      ? "brand.500 !important"
+                      ? "brand.300 !important"
                       : mode === LIGHT_THEME && selected === STAKING
-                      ? "darkbg.400 !important"
+                      ? "darkbg.200 !important"
                       : "brand.50 !important"
                   }
                   color={
                     mode === LIGHT_THEME && selected === LIQUIDITY
-                      ? "darkbg.400"
+                      ? "gray.700"
                       : mode === DARK_THEME && selected === LIQUIDITY
-                      ? "#brand.500"
+                      ? "gray.700"
                       : mode === DARK_THEME && selected === STAKING
-                      ? "brand.50"
+                      ? "gray.700"
                       : mode === LIGHT_THEME && selected === STAKING
-                      ? "darkbg.400"
-                      : "gray.500"
+                      ? "gray.700"
+                      : "gray.700"
                   }
                   onChange={handleLiquidityTab}
                   background={mode === LIGHT_THEME ? "brand.50" : "brand.400"}
                   cursor='pointer'
+                  color={"gray.700"}
                   border=' 1px solid tan.600'
                   box-sizing='border-box'
                   borderRadius='50px'
@@ -2053,9 +2054,9 @@ export function Index() {
                 mode === LIGHT_THEME && selected === LIQUIDITY
                   ? "tan.50 !important"
                   : mode === DARK_THEME && selected === STAKING
-                  ? "darkbg.400 !important"
+                  ? "darkbg.200 !important"
                   : mode === DARK_THEME && selected === LIQUIDITY
-                  ? "darkbg.400 !important"
+                  ? "darkbg.200 !important"
                   : mode === LIGHT_THEME && selected === STAKING
                   ? "brand.300 !important"
                   : "brand.300 !important"
@@ -2101,31 +2102,33 @@ export function Index() {
                   size={isMobileDevice ? undefined : "sm"}
                   borderColor={
                     mode === LIGHT_THEME && selected === LIQUIDITY
-                      ? "darkbg.400 !important"
+                      ? "darkbg.200 !important"
                       : mode === DARK_THEME && selected === LIQUIDITY
-                      ? "#008DFF !important"
+                      ? "tan.600 !important"
                       : mode === DARK_THEME && selected === STAKING
                       ? "brand.500 !important"
                       : mode === LIGHT_THEME && selected === STAKING
-                      ? "darkbg.400 !important"
+                      ? "darkbg.200 !important"
                       : "brand.50 !important"
                   }
                   cursor='pointer'
                   color={
                     mode === LIGHT_THEME && selected === LIQUIDITY
-                      ? "darkbg.400"
+                      ? "darkbg.200"
                       : mode === DARK_THEME && selected === LIQUIDITY
-                      ? "#008DFF"
+                      ? "tan.600"
                       : mode === DARK_THEME && selected === STAKING
                       ? "brand.50"
                       : mode === LIGHT_THEME && selected === STAKING
-                      ? "darkbg.400"
+                      ? "darkbg.200"
                       : "gray.500"
                   }
                   onChange={handleStakingTab}
-                  background={mode === LIGHT_THEME ? "#f7f7f8" : "darkbg.400"}
+                  background={mode === LIGHT_THEME ? "brand.50" : "brand.400"}
+                  cursor='pointer'
+                  color={"gray.700"}
                   onClick={(e)=>e.stopPropagation()}
-                  border=' 1px solid #008DFF'
+                  border=' 1px solid tan.600'
                   box-sizing='border-box'
                   borderRadius='50px'
                   /* Inside auto layout */
@@ -2148,9 +2151,9 @@ export function Index() {
                 mode === LIGHT_THEME && selected === LIQUIDITY
                   ? "tan.50 !important"
                   : mode === DARK_THEME && selected === STAKING
-                  ? "darkbg.400 !important"
+                  ? "darkbg.200 !important"
                   : mode === DARK_THEME && selected === LIQUIDITY
-                  ? "darkbg.400 !important"
+                  ? "darkbg.200 !important"
                   : mode === LIGHT_THEME && selected === STAKING
                   ? "brand.200 !important"
                   : "brand.200 !important"
@@ -2263,9 +2266,9 @@ export function Index() {
                   mode === LIGHT_THEME && selected === STAKING
                     ? "tan.50 !important"
                     : mode === DARK_THEME && selected === LIQUIDITY
-                    ? "darkbg.400 !important"
+                    ? "darkbg.200 !important"
                     : mode === DARK_THEME && selected === STAKING
-                    ? "darkbg.400 !important"
+                    ? "darkbg.200 !important"
                     : mode === LIGHT_THEME && selected === LIQUIDITY
                     ? "tan.50 !important"
                     : "tan.50 !important"
@@ -2282,9 +2285,9 @@ export function Index() {
                       mode === LIGHT_THEME && selected === LIQUIDITY
                         ? "brand.50  !important"
                         : mode === DARK_THEME && selected === LIQUIDITY
-                        ? "darkbg.400"
+                        ? "darkbg.200"
                         : mode === DARK_THEME && selected === STAKING
-                        ? "darkbg.400"
+                        ? "darkbg.200"
                         : mode === LIGHT_THEME && selected === STAKING
                         ? "brand.50"
                         : "brand.50 !important"
@@ -2601,7 +2604,7 @@ export function Index() {
                   mode === LIGHT_THEME
                     ? "tan.50 !important"
                     : mode === DARK_THEME
-                    ? "darkbg.400 !important"
+                    ? "darkbg.200 !important"
                     : "tan.50 !important"
                 }
                 rounded='lg'
@@ -2614,7 +2617,7 @@ export function Index() {
                     py={4}
                     background={
                       mode === DARK_THEME
-                        ? "darkbg.400"
+                        ? "darkbg.200"
                         : mode === LIGHT_THEME
                         ? "brand.50"
                         : "brand.50 !important"
@@ -2674,9 +2677,9 @@ export function Index() {
                   mode === LIGHT_THEME && selected === STAKING
                     ? "tan.50 !important"
                     : mode === DARK_THEME && selected === LIQUIDITY
-                    ? "darkbg.400 !important"
+                    ? "darkbg.200 !important"
                     : mode === DARK_THEME && selected === STAKING
-                    ? "darkbg.400 !important"
+                    ? "darkbg.200 !important"
                     : mode === LIGHT_THEME && selected === LIQUIDITY
                     ? "tan.50 !important"
                     : "tan.50 !important"
@@ -2693,9 +2696,9 @@ export function Index() {
                       mode === LIGHT_THEME && selected === LIQUIDITY
                         ? "brand.50  !important"
                         : mode === DARK_THEME && selected === LIQUIDITY
-                        ? "darkbg.400"
+                        ? "darkbg.200"
                         : mode === DARK_THEME && selected === STAKING
-                        ? "darkbg.400"
+                        ? "darkbg.200"
                         : mode === LIGHT_THEME && selected === STAKING
                         ? "brand.50"
                         : "brand.50 !important"
@@ -2764,7 +2767,7 @@ export function Index() {
                   mode === LIGHT_THEME
                     ? "tan.50 !important"
                     : mode === DARK_THEME
-                    ? "darkbg.400 !important"
+                    ? "darkbg.200 !important"
                     : "tan.50 !important"
                 }
                 rounded='lg'
@@ -2777,7 +2780,7 @@ export function Index() {
                     py={4}
                     background={
                       mode === DARK_THEME
-                        ? "darkbg.400"
+                        ? "darkbg.200"
                         : mode === LIGHT_THEME
                         ? "brand.50"
                         : "brand.50 !important"

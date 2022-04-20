@@ -72,7 +72,8 @@ const InputSelector = ({
           }}
           focusBorderColor="none"
         />
-        <Flex>
+        <Flex
+        color="gray.700"  >
           <Menu>
             <Button
               border="0px"

@@ -27,7 +27,7 @@ export default function App() {
   useConnectWallet();
 
   const {chainId} = useActiveWeb3React();
-
+  
   return (
     <Suspense fallback={null}>
       <Fonts />

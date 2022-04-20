@@ -30,7 +30,7 @@ const SetPrice = () => {
   const [isMobileDevice] = useMediaQuery('(max-width: 750px)');
   const borderColor = useColorModeValue('brand.400', 'brand.400');
   const iconColor = useColorModeValue('brand.500', 'brand.500');
-  const textColorOne = useColorModeValue('gray.300', 'brand.100');
+  const textColorOne = useColorModeValue('gray.600', 'brand.100');
   const bgColor = useColorModeValue('brand.50', 'brand.600');
   const buttonBgcolor = useColorModeValue('brand.100', 'brand.600');
   const color = useColorModeValue('brand.400', 'brand.500');

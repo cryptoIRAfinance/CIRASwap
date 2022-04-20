@@ -26,7 +26,7 @@ const Selector = ({
   otherCurrency,
   setToken,
 }: SelectorProps) => {
-  const tokenListTriggerColor = useColorModeValue('gray.700', 'brand.50');
+  const tokenListTriggerColor = useColorModeValue('gray.700', 'gray.700');
   const activeButtonColor = useColorModeValue('brand.500', 'tan.500');
   const genBorder = useColorModeValue('brand.100', 'brand.500');
   return (

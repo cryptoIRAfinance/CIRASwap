@@ -1927,7 +1927,7 @@ const ShowYieldFarmDetails = ({
                   <Tooltip
                     hasArrow
                     label={content.tokensStaked[1]}
-                    bg='gray.300'
+                    bg='brand.50'
                     color='black'
                   >
                     {parseFloat(content.tokensStaked[1]).toFixed(4)}
@@ -2154,7 +2154,7 @@ const ShowYieldFarmDetails = ({
                   <Tooltip
                     hasArrow
                     label={content.tokensStaked[1]}
-                    bg='gray.300'
+                    bg='brand.50'
                     color='black'
                   >
                     {parseFloat(content.tokensStaked[1]).toFixed(4)}

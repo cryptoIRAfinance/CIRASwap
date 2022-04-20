@@ -194,9 +194,9 @@ useEffect(() =>{
                   }
                       </ModalBody>
 
-               <ModalFooter py="4" bg={boxColor}
+               <ModalFooter py="4" bg={bgColor}
                 borderRadius="6px"
-                _hover={{ color: 'brand.100'}}
+                _hover={{ color: 'gray.500', bg: 'brand.100'}}
                 >
                    <Box
                     w="100%"

@@ -27,7 +27,7 @@ function DappsDropdown() {
           variant="ghost"
           bg="brand.300"
           as={Button}
-          
+          color="gray.700"
           borderRadius="md"
           borderWidth="1px"
           _hover={{ bg: "brand.200" }}
@@ -42,11 +42,14 @@ function DappsDropdown() {
           DApps
         </MenuButton>
         <MenuList bg="brand.400">
-          <MenuItem _hover={{ bg: 'brand.200' }}>
-            <Stack direction={'column'} spacing={0} >
+          <MenuItem _hover={{ bg: 'brand.200' }}
+          _focus={{ bg: "transparent" }}>
+          <Link href="https://swap.cryptoira.finance">
+                      <Stack direction={'column'} spacing={0} >
               <Text color={"brand.50"}>CIRA Swap</Text>
               <Text color={'gray.800'}>  Direct Token Swapping</Text>
             </Stack>
+          </Link>
 
           </MenuItem>
           <MenuItem _hover={{ bg: 'brand.200' }}>

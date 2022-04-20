@@ -51,10 +51,10 @@ const ConfirmModal: React.FC<IModal> = ({
   priceBperA,
   priceAperB,
 }) => {
-  const bgColor = useColorModeValue('brand.50', 'brand.600');
-  const lightTextColor = useColorModeValue('gray.500', 'brand.100');
-  const heavyTextColor = useColorModeValue('gray.300', 'brand.100');
-  const heavyTextColor2 = useColorModeValue('gray.300', 'gray.300');
+  const bgColor = useColorModeValue('brand.50', 'brand.500');
+  const lightTextColor = useColorModeValue('gray.600', 'gray.600');
+  const heavyTextColor = useColorModeValue('gray.700', 'gray.700');
+  const heavyTextColor2 = useColorModeValue('gray.800', 'gray.800');
   const [userSlippageTolerance] = useUserSlippageTolerance();
 
   return (
@@ -96,6 +96,7 @@ const ConfirmModal: React.FC<IModal> = ({
               <Text
                 display={pairAvailable ? undefined : 'none'}
                 fontSize="16px"
+                color="gray.600"
               >
                 You will receive
               </Text>
@@ -107,6 +108,7 @@ const ConfirmModal: React.FC<IModal> = ({
               <Text
                 display={pairAvailable ? undefined : 'none'}
                 fontSize="16px"
+                color="gray.600"
               >
                 {from} / {to} Liquidity Token
               </Text>
@@ -157,6 +159,8 @@ const ConfirmModal: React.FC<IModal> = ({
               isFullWidth
               padding="24px 0"
               boxShadow="none"
+              bgColor="brand.300"
+              _hover={{ bgColor: 'brand.200'}}
               onClick={() => {
                 setShowModal(false);
                 handleAddLiquidity();

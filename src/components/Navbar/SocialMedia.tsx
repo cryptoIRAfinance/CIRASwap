@@ -39,25 +39,26 @@ const SocialMediaLinks = () => {
           target="_blank"
           href="https://www.linkedin.com/" rel="noreferrer"
         >
-          <MenuItem _hover={{ bg: 'tan.400' }}>Linkedin</MenuItem>
+          <MenuItem _hover={{ bg: 'brand.200' }}
+          _focus={{ bg: "transparent" }}>Linkedin</MenuItem>
         </a>
 
         <a target="_blank" href="https://www.medium.com/cryptoIRAfinance" rel="noreferrer">
-          <MenuItem _hover={{ bg: 'tan.400' }}>Medium</MenuItem>
+          <MenuItem _hover={{ bg: 'brand.200' }}>Medium</MenuItem>
         </a>
         <MenuDivider />
         <a target="_blank" href="https://www.t.me/cryptoIRAchat" rel="noreferrer">
-          <MenuItem _hover={{ bg: 'tan.400' }}>Telegram</MenuItem>
+          <MenuItem _hover={{ bg: 'brand.200' }}>Telegram</MenuItem>
         </a>
         <a target="_blank" href="https://twitter.com/cryptoIRAfinance" rel="noreferrer">
-          <MenuItem _hover={{ bg: 'tan.400' }}>Twitter</MenuItem>
+          <MenuItem _hover={{ bg: 'brand.200' }}>Twitter</MenuItem>
         </a>
         <MenuDivider />
-        <a target="_blank" href="https://github.com/cryptoIRAfinance" rel="noreferrer">
-          <MenuItem _hover={{ bg: 'tan.400' }}>Github</MenuItem>
-        </a>
         <a target="_blank" href="https://discord.gg/" rel="noreferrer">
-          <MenuItem _hover={{ bg: 'tan.400' }}>Discord</MenuItem>
+          <MenuItem _hover={{ bg: 'brand.200' }}>Discord</MenuItem>
+        </a>
+        <a target="_blank" href="https://github.com/cryptoIRAfinance" rel="noreferrer">
+          <MenuItem _hover={{ bg: 'brand.200' }}>Github</MenuItem>
         </a>
       </MenuList>
     </Menu>

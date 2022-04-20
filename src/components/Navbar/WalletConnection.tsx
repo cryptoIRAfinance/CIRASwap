@@ -114,6 +114,7 @@ export default function WalletConnection() {
       <>
         <Button
           data-tut="reactour__WalletConnect"
+          bgColor="brand.300"
           onClick={() => {
             setDisplayNetwork(state => !state);
             localStorage.removeItem('walletconnect')

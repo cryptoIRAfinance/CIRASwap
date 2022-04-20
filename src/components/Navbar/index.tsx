@@ -87,10 +87,10 @@ const Index = () => {
             <>
               <Flex h="10">
                 <Box mr={4}>
-                  <NavLink to="https://cryptoira.finance">
+                  <Link href="https://cryptoira.finance">
                     {" "}
                     <Img src={Logo} />{" "}
-                  </NavLink>
+                  </Link>
                 </Box>
                 <DappsDropdown />
 
